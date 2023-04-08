@@ -1,0 +1,62 @@
+// Variables
+$primary-color: #0066ff;
+$background-color: #f8f9fa;
+
+// Styles
+.footer {
+  background-color: $background-color;
+  color: #333333;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+
+  &__left,
+  &__center,
+  &__right {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__address {
+    margin-bottom: 5px;
+  }
+
+  &__email,
+  &__hotline {
+    margin-bottom: 10px;
+  }
+
+  &__app-store,
+  &__google-play {
+    display: block;
+    max-width: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__right {
+    text-align: right;
+
+    & a {
+      color: $primary-color;
+      text-decoration: none;
+      margin-right: 10px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__policy {
+      margin-bottom: 10px;
+    }
+  }
+}
