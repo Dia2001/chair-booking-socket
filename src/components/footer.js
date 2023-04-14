@@ -14,6 +14,7 @@ const Footer = () => {
         <div className="footer__center">
           <h3 className="footer__title">Tải ngay ứng dụng để đặt chuyến dễ dàng nhất!</h3>
           <img src={appstore} alt="Download on the App Store" className="footer__app-store"/>
+          
           <img src={chplay} alt="Get it on Google Play" className="footer__google-play"/>
         </div>
         <div className="footer__right">
