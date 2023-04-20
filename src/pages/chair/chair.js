@@ -49,7 +49,7 @@ function Chair() {
     }
 
     return (
-      <div className="p-5">
+    <div className="p-5">
       <div className="text-[#000000] text-xl font-bold  pb-10 ">Sau khi chọn ghế các client khác sẽ đóng lại không cho chọn ghế này nữa</div>
         <div className="mx-auto w-[50%] grid grid-rows-10 grid-cols-3 gap-2">
         {chairs.map((chair,index)=>(
@@ -63,11 +63,11 @@ function Chair() {
             onClick={() => onClickSeat(chair.chairId)}
             disabled={!chair.status}>
              {chair.chairNumber}
-        </button>
+            </button>
         </div>
         ))}
-          </div>
-          </div>
+      </div>
+    </div>
            
     )
 }
